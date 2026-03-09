@@ -1,74 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <h1>
+    Desserts
+  </h1>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-waffle-desktop.jpg" width="250">
 
-  Desserts
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-waffle-tablet.jpg" width="250">
 
-  Waffle with Berries
-  Waffle
-  6.50
-  Add to Cart
+      <!-- Mobile -->
+      <img src="./img/image-waffle-mobile.jpg" alt="Waffle" width="325">
+    </picture>
 
-  Vanilla Bean Crème Brûlée
-  Crème Brûlée
-  7.00
-  Add to Cart
+    <p>Waffle with Berries</p>
+    <p>Waffle</p>
+    <p>6.50</p>
+    <p>Add to Cart</p>
+  </article>
 
-  Macaron Mix of Five
-  Macaron
-  8.00
-  Add to Cart
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-creme-brulee-desktop.jpg" width="250">
 
-  Classic Tiramisu
-  Tiramisu
-  5.50
-  Add to Cart
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-creme-brulee-tablet.jpg" width="250">
 
-  Pistachio Baklava
-  Baklava
-  4.00
-  Add to Cart
+      <!-- Mobile -->
+      <img src="./img/image-creme-brulee-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Vanilla Bean Crème Brûlée</p>
+    <p>Crème Brûlée</p>
+    <p>7.00</p>
+    <p>Add to Cart</p>
+  </article>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-macaron-desktop.jpg" width="250">
 
-  Lemon Meringue Pie
-  Pie
-  5.00
-  Add to Cart
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-macaron-tablet.jpg" width="250">
 
-  Red Velvet Cake
-  Cake
-  4.50
-  Add to Cart
+      <!-- Mobile -->
+      <img src="./img/image-macaron-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Macaron Mix of Five</p>
+    <p>Macaron</p>
+    <p>8.00</p>
+    <p>Add to Cart</p>
+  </article>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-tiramisu-desktop.jpg" width="250">
 
-  Salted Caramel Brownie
-  Brownie
-  4.50
-  Add to Cart
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-tiramisu-tablet.jpg" width="250">
 
-  Vanilla Panna Cotta
-  Panna Cotta
-  6.50
-  Add to Cart
+      <!-- Mobile -->
+      <img src="./img/image-tiramisu-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Classic Tiramisu</p>
+    <p>Tiramisu</p>
+    <p>5.50</p>
+    <p>Add to Cart</p>
+  </article>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-baklava-desktop.jpg" width="250">
 
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-baklava-tablet.jpg" width="250">
 
+      <!-- Mobile -->
+      <img src="./img/image-baklava-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Pistachio Baklava</p>
+    <p>Baklava</p>
+    <p>4.00</p>
+    <p>Add to Cart</p>
+  </article>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-meringue-desktop.jpg" width="250">
+
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-meringue-tablet.jpg" width="250">
+
+      <!-- Mobile -->
+      <img src="./img/image-meringue-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Lemon Meringue Pie</p>
+    <p>Pie</p>
+    <p>5.00</p>
+    <p>Add to Cart</p>
+  </article>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-cake-desktop.jpg" width="250">
+
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-cakee-tablet.jpg" width="250">
+
+      <!-- Mobile -->
+      <img src="./img/image-cake-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Red Velvet Cake</p>
+    <p>Cake</p>
+    <p>4.50</p>
+    <p>Add to Cart</p>
+  </article>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-brownie-desktop.jpg" width="250">
+
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-brownie-tablet.jpg" width="250">
+
+      <!-- Mobile -->
+      <img src="./img/image-brownie-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Salted Caramel Brownie</p>
+    <p>Brownie</p>
+    <p>4.50</p>
+    <p>Add to Cart</p>
+  </article>
+  <article>
+    <picture>
+      <!-- Desktop -->
+      <source media="(min-width: 1024px)" srcset="./img/image-panna-cotta-desktop.jpg" width="250">
+
+      <!-- Tablet -->
+      <source media="(min-width: 768px)" srcset="./img/image-panna-cotta-tablet.jpg" width="250">
+
+      <!-- Mobile -->
+      <img src="./img/image-panna-cotta-mobile.jpg" alt="Waffle" width="325">
+    </picture>
+    <p>Vanilla Panna Cotta</p>
+    <p>Panna Cotta</p>
+    <p>6.50</p>
+    <p>Add to Cart</p>
+  </article>
+  <p>Your Cart</p> (<!-- Quantity -->)
+  <p>Your added items will appear here</p>
+  <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+-->
 </body>
+
 </html>
