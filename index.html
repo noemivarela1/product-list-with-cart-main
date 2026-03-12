@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Product list with cart</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!--<style>
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -20,178 +25,194 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-  </style>
+  </style>-->
 </head>
 
 <body>
-  <h1>
-    Desserts
-  </h1>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-waffle-desktop.jpg" width="250">
+  <main>
+    <header>
+      <h1>
+        Desserts
+      </h1>
+    </header>
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-waffle-desktop.jpg" width="250">
 
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-waffle-tablet.jpg" width="250">
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-waffle-tablet.jpg" width="250">
 
-      <!-- Mobile -->
-      <img src="./img/image-waffle-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Waffle with Berries</h2>
-      <p>Waffle</p>
-      <p>6.50</p>
+        <!-- Mobile -->
+        <img src="./img/image-waffle-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Waffle with Berries</h3>
+        <h5>Waffle</h5>
+        <h4>6.50</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
+
+    </article>
+
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-creme-brulee-desktop.jpg" width="250">
+
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-creme-brulee-tablet.jpg" width="250">
+
+        <!-- Mobile -->
+        <img src="./img/image-creme-brulee-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Vanilla Bean Crème Brûlée</h3>
+        <h5>Crème Brûlée</h5>
+        <h4>7.00</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
+
+    </article>
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-macaron-desktop.jpg" width="250">
+
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-macaron-tablet.jpg" width="250">
+
+        <!-- Mobile -->
+        <img src="./img/image-macaron-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Macaron Mix of Five</h3>
+        <h5>Macaron</h5>
+        <h4>8.00</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
+
+    </article>
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-tiramisu-desktop.jpg" width="250">
+
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-tiramisu-tablet.jpg" width="250">
+
+        <!-- Mobile -->
+        <img src="./img/image-tiramisu-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Classic Tiramisu</h3>
+        <h5>Tiramisu</h5>
+        <h4>5.50</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
+
+    </article>
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-baklava-desktop.jpg" width="250">
+
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-baklava-tablet.jpg" width="250">
+
+        <!-- Mobile -->
+        <img src="./img/image-baklava-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Pistachio Baklava</h3>
+        <h5>Baklava</h5>
+        <h4>4.00</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
+
+    </article>
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-meringue-desktop.jpg" width="250">
+
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-meringue-tablet.jpg" width="250">
+
+        <!-- Mobile -->
+        <img src="./img/image-meringue-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Lemon Meringue Pie</h3>
+        <h5>Pie</h5>
+        <h4>5.00</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
+
+    </article>
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-cake-desktop.jpg" width="250">
+
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-cakee-tablet.jpg" width="250">
+
+        <!-- Mobile -->
+        <img src="./img/image-cake-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Red Velvet Cake</h3>
+        <h5>Cake</h5>
+        <h4>4.50</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
+
+    </article>
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-brownie-desktop.jpg" width="250">
+
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-brownie-tablet.jpg" width="250">
+
+        <!-- Mobile -->
+        <img src="./img/image-brownie-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Salted Caramel Brownie</h3>
+        <h5>Brownie</h5>
+        <h4>4.50</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+    </article>
     </section>
-    <p>Add to Cart</p>
-  </article>
 
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-creme-brulee-desktop.jpg" width="250">
+    <article>
+      <picture>
+        <!-- Desktop -->
+        <source media="(min-width: 1024px)" srcset="./img/image-panna-cotta-desktop.jpg" width="250">
 
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-creme-brulee-tablet.jpg" width="250">
+        <!-- Tablet -->
+        <source media="(min-width: 768px)" srcset="./img/image-panna-cotta-tablet.jpg" width="250">
 
-      <!-- Mobile -->
-      <img src="./img/image-creme-brulee-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Vanilla Bean Crème Brûlée</h2>
-      <p>Crème Brûlée</p>
-      <p>7.00</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-macaron-desktop.jpg" width="250">
+        <!-- Mobile -->
+        <img src="./img/image-panna-cotta-mobile.jpg" alt="Waffle" width="325">
+      </picture>
+      <section>
+        <h3>Vanilla Panna Cotta</h3>
+        <h5>Panna Cotta</h5>
+        <h4>6.50</h4>
+        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+      </section>
 
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-macaron-tablet.jpg" width="250">
-
-      <!-- Mobile -->
-      <img src="./img/image-macaron-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Macaron Mix of Five</h2>
-      <p>Macaron</p>
-      <p>8.00</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-tiramisu-desktop.jpg" width="250">
-
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-tiramisu-tablet.jpg" width="250">
-
-      <!-- Mobile -->
-      <img src="./img/image-tiramisu-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Classic Tiramisu</h2>
-      <p>Tiramisu</p>
-      <p>5.50</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-baklava-desktop.jpg" width="250">
-
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-baklava-tablet.jpg" width="250">
-
-      <!-- Mobile -->
-      <img src="./img/image-baklava-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Pistachio Baklava</h2>
-      <p>Baklava</p>
-      <p>4.00</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-meringue-desktop.jpg" width="250">
-
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-meringue-tablet.jpg" width="250">
-
-      <!-- Mobile -->
-      <img src="./img/image-meringue-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Lemon Meringue Pie</h2>
-      <p>Pie</p>
-      <p>5.00</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-cake-desktop.jpg" width="250">
-
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-cakee-tablet.jpg" width="250">
-
-      <!-- Mobile -->
-      <img src="./img/image-cake-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Red Velvet Cake</h2>
-      <p>Cake</p>
-      <p>4.50</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-brownie-desktop.jpg" width="250">
-
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-brownie-tablet.jpg" width="250">
-
-      <!-- Mobile -->
-      <img src="./img/image-brownie-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Salted Caramel Brownie</h2>
-      <p>Brownie</p>
-      <p>4.50</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <article>
-    <picture>
-      <!-- Desktop -->
-      <source media="(min-width: 1024px)" srcset="./img/image-panna-cotta-desktop.jpg" width="250">
-
-      <!-- Tablet -->
-      <source media="(min-width: 768px)" srcset="./img/image-panna-cotta-tablet.jpg" width="250">
-
-      <!-- Mobile -->
-      <img src="./img/image-panna-cotta-mobile.jpg" alt="Waffle" width="325">
-    </picture>
-    <section>
-      <h2>Vanilla Panna Cotta</h2>
-      <p>Panna Cotta</p>
-      <p>6.50</p>
-    </section>
-    <p>Add to Cart</p>
-  </article>
-  <p>Your Cart</p> (<!-- Quantity -->)
-  <p>Your added items will appear here</p>
+    </article>
+  </main>
+  <section class="info">
+    <h2>Your Cart <span>(<!-- Quantity -->)</span></h2>
+    <img src="./img/illustration-empty-cart.svg" alt="Empty cart">
+    <p class="items">Your added items will appear here</p>
+  </section>
   <!--
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
