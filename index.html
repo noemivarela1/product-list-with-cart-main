@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Product list with cart</title>
-
+  <script src="script.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <!--<style>
     .attribution {
@@ -38,19 +38,21 @@
     <article>
       <picture>
         <!-- Desktop -->
-        <source media="(min-width: 1024px)" srcset="./img/image-waffle-desktop.jpg" width="250">
+        <source media="(min-width: 1024px)" srcset="./img/image-waffle-desktop.jpg" width="250"
+          style="border:4px solid back">
 
         <!-- Tablet -->
-        <source media="(min-width: 768px)" srcset="./img/image-waffle-tablet.jpg" width="250">
+        <source media="(min-width: 768px)" srcset="./img/image-waffle-tablet.jpg" width="250"
+          style="border:4px solid back">
 
         <!-- Mobile -->
         <img src="./img/image-waffle-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Waffle with Berries</h3>
+        <h3 id="postre-1">Waffle with Berries</h3>
         <h5>Waffle</h5>
         <h4>6.50</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-1"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -67,10 +69,10 @@
         <img src="./img/image-creme-brulee-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Vanilla Bean Crème Brûlée</h3>
+        <h3 id="postre-2">Vanilla Bean Crème Brûlée</h3>
         <h5>Crème Brûlée</h5>
         <h4>7.00</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-2"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -86,10 +88,10 @@
         <img src="./img/image-macaron-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Macaron Mix of Five</h3>
+        <h3 id="postre-3">Macaron Mix of Five</h3>
         <h5>Macaron</h5>
         <h4>8.00</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-3"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -105,10 +107,10 @@
         <img src="./img/image-tiramisu-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Classic Tiramisu</h3>
+        <h3 id="postre-4">Classic Tiramisu</h3>
         <h5>Tiramisu</h5>
         <h4>5.50</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-4"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -124,10 +126,10 @@
         <img src="./img/image-baklava-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Pistachio Baklava</h3>
+        <h3 id="postre-5">Pistachio Baklava</h3>
         <h5>Baklava</h5>
         <h4>4.00</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-5"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -143,10 +145,10 @@
         <img src="./img/image-meringue-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Lemon Meringue Pie</h3>
+        <h3 id="postre-6">Lemon Meringue Pie</h3>
         <h5>Pie</h5>
         <h4>5.00</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-6"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -162,10 +164,10 @@
         <img src="./img/image-cake-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Red Velvet Cake</h3>
+        <h3 id="postre-7">Red Velvet Cake</h3>
         <h5>Cake</h5>
         <h4>4.50</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-7"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -181,10 +183,10 @@
         <img src="./img/image-brownie-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Salted Caramel Brownie</h3>
+        <h3 id="postre-8">Salted Caramel Brownie</h3>
         <h5>Brownie</h5>
         <h4>4.50</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-8"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
     </article>
     </section>
 
@@ -200,18 +202,117 @@
         <img src="./img/image-panna-cotta-mobile.jpg" alt="Waffle" width="325">
       </picture>
       <section>
-        <h3>Vanilla Panna Cotta</h3>
+        <h3 id="postre-9">Vanilla Panna Cotta</h3>
         <h5>Panna Cotta</h5>
         <h4>6.50</h4>
-        <p class="cart"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-9"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
       </section>
 
     </article>
   </main>
-  <section class="info">
-    <h2>Your Cart <span>(<!-- Quantity -->)</span></h2>
-    <img src="./img/illustration-empty-cart.svg" alt="Empty cart">
-    <p class="items">Your added items will appear here</p>
+  <section id="info">
+    <h2>Your Cart (<span id="quantity"><!-- Quantity -->0</span>)</h2>
+    <div id="pedido">
+      <img src="./img/illustration-empty-cart.svg" alt="Empty cart">
+      <p class="items">Your added items will appear here</p>
+    </div>
+    <ul>
+      <li id="item-1">
+        <div>
+          <h3>Item 1</h3>
+          <h3><span id="cant-1" class="cantidade">0</span> <span id="prezo-1" class="prezo">6.50</span> <span
+              id="subtotal-1" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-1">
+        </div>
+      </li>
+      <li id="item-2">
+        <div>
+          <h3 class="dessert">Item 2</h3>
+          <h3><span id="cant-2" class="cantidade">0</span> <span id="prezo-2" class="prezo">6.50</span> <span
+              id="subtotal-2" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-2">
+        </div>
+      </li>
+      <li id="item-3">
+        <div>
+          <h3 class="dessert">Item 3</h3>
+          <h3><span id="cant-3" class="cantidade">0</span> <span id="prezo-3" class="prezo">6.50</span> <span
+              id="subtotal-3" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-3">
+        </div>
+      </li>
+      <li id="item-4">
+        <div>
+          <h3 class="dessert">Item 4</h3>
+          <h3><span id="cant-4" class="cantidade">0</span> <span id="prezo-4" class="prezo">6.50</span> <span
+              id="subtotal-4" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-4">
+        </div>
+      </li>
+      <li id="item-5">
+        <div>
+          <h3 class="dessert">Item 5</h3>
+          <h3><span id="cant-5" class="cantidade">0</span> <span id="prezo-5" class="prezo">6.50</span> <span
+              id="subtotal-5" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-5">
+        </div>
+      </li>
+      <li id="item-6">
+        <div>
+          <h3 class="dessert">Item 6</h3>
+          <h3><span id="cant-6" class="cantidade">0</span> <span id="prezo-6" class="prezo">6.50</span> <span
+              id="subtotal-6" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove"id="remove-6">
+        </div>
+      </li>
+      <li id="item-7">
+        <div>
+          <h3 class="dessert">Item 7</h3>
+          <h3><span id="cant-7" class="cantidade">0</span> <span id="prezo-7" class="prezo">6.50</span> <span
+              id="subtotal-7" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-7">
+        </div>
+      </li>
+      <li id="item-8">
+        <div>
+          <h3 class="dessert">Item 8</h3>
+          <h3><span id="cant-8" class="cantidade">0</span> <span id="prezo-8" class="prezo">6.50</span> <span
+              id="subtotal-8" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-8">
+        </div>
+      </li>
+      <li id="item-9">
+        <div>
+          <h3 class="dessert">Item 9</h3>
+          <h3><span id="cant-9" class="cantidade">0</span> <span id="prezo-9" class="prezo">6.50</span> <span
+              id="subtotal-9" class="subtotal">0.00</span></h3>
+        </div>
+        <div>
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-9">
+        </div>
+      </li>
+    </ul>
+    <section id="order-total">
+      <p id="total"><span>Order Total</span> <span id="total-xeral"><strong>0.00</strong></span></p>
+      <p id="carbon"><img src="img/icon-carbon-neutral.svg" alt="Tree"> This is a <strong>carbon-neutral</strong> delivery</p>
+      <p id="btn-confirmar">Confirm Order</p>
+  </section>
   </section>
   <!--
   <div class="attribution">
