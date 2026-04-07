@@ -52,7 +52,7 @@
         <h3 id="postre-1">Waffle with Berries</h3>
         <h5>Waffle</h5>
         <h4>6.50</h4>
-        <p class="cart" id="carro-1"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-1"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -72,7 +72,7 @@
         <h3 id="postre-2">Vanilla Bean Crème Brûlée</h3>
         <h5>Crème Brûlée</h5>
         <h4>7.00</h4>
-        <p class="cart" id="carro-2"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-2"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -91,7 +91,7 @@
         <h3 id="postre-3">Macaron Mix of Five</h3>
         <h5>Macaron</h5>
         <h4>8.00</h4>
-        <p class="cart" id="carro-3"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-3"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -110,7 +110,7 @@
         <h3 id="postre-4">Classic Tiramisu</h3>
         <h5>Tiramisu</h5>
         <h4>5.50</h4>
-        <p class="cart" id="carro-4"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-4"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -129,7 +129,7 @@
         <h3 id="postre-5">Pistachio Baklava</h3>
         <h5>Baklava</h5>
         <h4>4.00</h4>
-        <p class="cart" id="carro-5"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-5"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -167,7 +167,7 @@
         <h3 id="postre-7">Red Velvet Cake</h3>
         <h5>Cake</h5>
         <h4>4.50</h4>
-        <p class="cart" id="carro-7"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-7"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -186,7 +186,7 @@
         <h3 id="postre-8">Salted Caramel Brownie</h3>
         <h5>Brownie</h5>
         <h4>4.50</h4>
-        <p class="cart" id="carro-8"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-8"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
     </article>
     </section>
 
@@ -205,7 +205,7 @@
         <h3 id="postre-9">Vanilla Panna Cotta</h3>
         <h5>Panna Cotta</h5>
         <h4>6.50</h4>
-        <p class="cart" id="carro-9"><img src="./img/icon-add-to-cart.svg" alt="cart" ><strong> Add to Cart</strong></p>
+        <p class="cart" id="carro-9"><img src="./img/icon-add-to-cart.svg" alt="cart"><strong> Add to Cart</strong></p>
       </section>
 
     </article>
@@ -274,7 +274,7 @@
               id="subtotal-6" class="subtotal">0.00</span></h3>
         </div>
         <div>
-          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove"id="remove-6">
+          <img src="./img/icon-remove-item.svg" alt="remove" class="icon-remove" id="remove-6">
         </div>
       </li>
       <li id="item-7">
@@ -310,9 +310,28 @@
     </ul>
     <section id="order-total">
       <p id="total"><span>Order Total</span> <span id="total-xeral"><strong>0.00</strong></span></p>
-      <p id="carbon"><img src="img/icon-carbon-neutral.svg" alt="Tree"> This is a <strong>carbon-neutral</strong> delivery</p>
+      <p id="carbon"><img src="img/icon-carbon-neutral.svg" alt="Tree"> This is a <strong>carbon-neutral</strong>
+        delivery</p>
       <p id="btn-confirmar">Confirm Order</p>
+    </section>
   </section>
+  <section id="modal-resumo" class="modal-overlay" style="display: none;">
+    <article class="modal-content">
+        <img src="img/icon-order-confirmed.svg" alt="Confirmado">
+        <h1>Order Confirmed</h1>
+        <p>We hope you enjoy your food!</p>
+        
+        <ul id="lista-resumo-final">
+            
+        </ul>
+        
+        <div class="total-final-modal">
+            <span>Order Total</span>
+            <strong id="total-modal">0.00€</strong>
+        </div>
+        
+        <button id="btn-novo-pedido">Start New Order</button>
+      </article>
   </section>
   <!--
   <div class="attribution">

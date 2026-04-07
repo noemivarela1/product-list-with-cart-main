@@ -8,6 +8,10 @@ const quantity = document.getElementById('quantity');
 const totalXeral = document.getElementById('total-xeral');
 const btnConfirmar = document.getElementById('btn-confirmar');
 
+const modal = document.getElementById('modal-resumo');
+const listaResumo = document.getElementById('lista-resumo-final');
+const btnNovoPedido = document.getElementById('btn-novo-pedido');
+
 carts.forEach(cart => {
     cart.addEventListener('click', function(event) {
         // Se xa está en modo +/- (ten un span), non facemos nada
@@ -189,3 +193,54 @@ function actualizarTotais() {
         totalXeral.textContent = "0.00€";
     }
 }
+
+btnConfirmar.onclick = function() {
+   
+    // 1. Limpamos o resumo anterior
+    listaResumo.innerHTML = '';
+    
+    // 2. Buscamos todos os 'li' que están visibles na factura lateral
+    const itemsFactura = document.querySelectorAll("li[id^='item-']");
+    
+    itemsFactura.forEach(item => {
+        if (item.style.display !== "none") {
+            const num = item.id.split('-').pop();
+
+            const botonOrixinal = document.getElementById("carro-" + num);
+            const sectionOrixinal = botonOrixinal.closest('section');
+            const imgOrixinalSrc = sectionOrixinal.previousElementSibling.querySelector('img').src;
+
+            
+            const nome = item.querySelector("h3").textContent;
+            const cant = document.getElementById("cant-" + num).textContent;
+            const prezo=document.getElementById("prezo-"+num).textContent;
+            const sub = document.getElementById("subtotal-" + num).textContent;
+
+            // Creamos un resumo sinxelo para o modal
+            const liResumo = document.createElement("li");
+            liResumo.style.display = "flex";
+            liResumo.style.justifyContent = "flex-start";
+            liResumo.style.borderBottom = "1px solid #ddd";
+            liResumo.style.padding = "0.5em 0";
+            liResumo.innerHTML = `<img src="${imgOrixinalSrc}" class="imx-miniatura">
+                <div class="datos">
+                   <h3>${nome}</h3>
+                   <div class="subtot"> 
+                      <div><strong class="cantidade">${cant}</strong><span class="prezo"> ${prezo}</span></div>
+                      <div><span class="subtotal"><strong>${sub}</strong></span</div>
+                   </div>
+                </div>
+            `;
+            listaResumo.appendChild(liResumo);
+        }
+    });
+
+    // 3. Poñemos o total e amosamos o modal
+    document.getElementById("total-modal").textContent = document.getElementById("total-xeral").textContent;
+    modal.style.display = "flex";
+};
+
+// Botón para resetear todo e empezar de novo
+btnNovoPedido.onclick = function() {
+    location.reload(); // A forma máis rápida de resetear toda páxina
+};
